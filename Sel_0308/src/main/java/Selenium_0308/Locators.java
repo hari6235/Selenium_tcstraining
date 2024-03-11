@@ -10,7 +10,7 @@ public class Locators {
 	static WebDriver driver = new ChromeDriver();
 
 	public static void InvokeBrowser() {
-		driver.get("C:\\Users\\Administrator\\eclipse-workspace\\Sel_0308\\htmlfile.html");
+		driver.get("C:\\Users\\Administrator\\git\\Selenium_tcstraining\\Sel_0308\\htmlfile.html");
 		driver.manage().window().maximize();
 		By maleradiobutton = RelativeLocator.with(By.tagName("input")).toLeftOf(By.cssSelector("input[value='f']"));
 		driver.findElement(maleradiobutton).click();
