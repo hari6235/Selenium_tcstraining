@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="iFrameTest.GetWindowHandles">
+      <class name="differentElements.JavascriptExector">
         <methods>
-          <include name="invokeUrl"/>
-          <include name="teardown"/>
-          <include name="windowHandles"/>
+          <include name="invoke"/>
+          <include name="TestJavaScript"/>
         </methods>
-      </class> <!-- iFrameTest.GetWindowHandles -->
+      </class> <!-- differentElements.JavascriptExector -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
