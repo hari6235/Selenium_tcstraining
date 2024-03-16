@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-16T18:34:22 GMT" name="Default suite" finished-at="2024-03-16T18:34:38 GMT" duration-ms="15568">
+  <suite started-at="2024-03-16T18:59:11 GMT" name="Default suite" finished-at="2024-03-16T18:59:27 GMT" duration-ms="16335">
     <groups>
     </groups>
-    <test started-at="2024-03-16T18:34:22 GMT" name="Default test" finished-at="2024-03-16T18:34:38 GMT" duration-ms="15568">
+    <test started-at="2024-03-16T18:59:11 GMT" name="Default test" finished-at="2024-03-16T18:59:27 GMT" duration-ms="16335">
       <class name="CaseStudy_1.RedBus_Automation">
-        <test-method is-config="true" signature="Invoke()[pri:0, instance:CaseStudy_1.RedBus_Automation@29647f75]" started-at="2024-03-16T18:34:22 GMT" name="Invoke" finished-at="2024-03-16T18:34:24 GMT" duration-ms="2299" status="PASS">
+        <test-method is-config="true" signature="Invoke()[pri:0, instance:CaseStudy_1.RedBus_Automation@29647f75]" started-at="2024-03-16T18:59:11 GMT" name="Invoke" finished-at="2024-03-16T18:59:13 GMT" duration-ms="2173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Invoke -->
-        <test-method signature="Testcase_1()[pri:1, instance:CaseStudy_1.RedBus_Automation@29647f75]" started-at="2024-03-16T18:34:24 GMT" name="Testcase_1" finished-at="2024-03-16T18:34:27 GMT" duration-ms="2353" status="PASS">
+        <test-method signature="Testcase_1()[pri:1, instance:CaseStudy_1.RedBus_Automation@29647f75]" started-at="2024-03-16T18:59:13 GMT" name="Testcase_1" finished-at="2024-03-16T18:59:16 GMT" duration-ms="3115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Testcase_1 -->
-        <test-method signature="Testcase_2()[pri:2, instance:CaseStudy_1.RedBus_Automation@29647f75]" started-at="2024-03-16T18:34:27 GMT" name="Testcase_2" finished-at="2024-03-16T18:34:38 GMT" duration-ms="10876" status="PASS">
+        <test-method signature="Testcase_2()[pri:2, instance:CaseStudy_1.RedBus_Automation@29647f75]" started-at="2024-03-16T18:59:16 GMT" name="Testcase_2" finished-at="2024-03-16T18:59:27 GMT" duration-ms="11008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Testcase_2 -->
