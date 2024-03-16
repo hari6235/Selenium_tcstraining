@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="differentElements.JavascriptExector">
+      <class name="CaseStudy_1.RedBus_Automation">
         <methods>
-          <include name="invoke"/>
-          <include name="TestJavaScript"/>
+          <include name="Testcase_2"/>
+          <include name="Invoke"/>
         </methods>
-      </class> <!-- differentElements.JavascriptExector -->
+      </class> <!-- CaseStudy_1.RedBus_Automation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
