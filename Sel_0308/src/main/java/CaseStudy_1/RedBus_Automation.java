@@ -1,5 +1,6 @@
 package CaseStudy_1;
 
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -7,6 +8,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -80,14 +83,31 @@ public class RedBus_Automation {
 		//---Search for available buses
 
 		driver.findElement(By.id("search_button")).click();
-
-	}
+			
+		String Searchbus = driver.getTitle();
+		String SearchbusAct = "Book Bus Tickets Online, Easy & Secure Booking, Top Operators - redBus";
+				
+		Assert.assertEquals(Searchbus, SearchbusAct);
+		
+		}
+	/*@Test(priority = 3)
+	public void Testcase3() {
+		
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
+		
+		WebElement listofBuses = wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("bus-items"))));
+		
+		String AvailableListofBuses = listofBuses.getText();
+		
+		System.out.println("Total Available buses for the selected route is/are: "+AvailableListofBuses);
+		
+	} */
 
 	@AfterClass
 
 	public void teardown(){
 
-		driver.quit();
+		//driver.quit();
 	}
 
 }
