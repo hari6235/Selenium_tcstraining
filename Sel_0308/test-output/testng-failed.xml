@@ -5,7 +5,8 @@
     <classes>
       <class name="CaseStudy_1.RedBus_Automation">
         <methods>
-          <include name="Testcase_2"/>
+          <include name="Testcase3"/>
+          <include name="teardown"/>
           <include name="Invoke"/>
         </methods>
       </class> <!-- CaseStudy_1.RedBus_Automation -->
