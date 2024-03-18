@@ -1,15 +1,14 @@
 package CaseStudy_1;
 
-import java.time.Duration;
+import java.lang.ProcessHandle.Info;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -63,7 +62,7 @@ public class RedBus_Automation {
 
 		//---Destination Input
 		driver.findElement(By.xpath("//input[@id='dest']")).click();
-		driver.findElement(By.xpath("//input[@id='dest']")).sendKeys("Banglore");
+		driver.findElement(By.xpath("//input[@id='dest']")).sendKeys("Bangalore");
 		Thread.sleep(5000);
 
 		//---Date Picker
@@ -88,19 +87,21 @@ public class RedBus_Automation {
 		String SearchbusAct = "Book Bus Tickets Online, Easy & Secure Booking, Top Operators - redBus";
 
 		Assert.assertEquals(Searchbus, SearchbusAct);
+		
+		Thread.sleep(5000);
 
 	}
 	@Test(priority = 3)
 	public void Testcase3() {
-
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
-
-		WebElement listofBuses = wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("bus-items"))));
+		
+		//---Listing the available buses on the given route
+		WebElement listofBuses = driver.findElement(By.xpath("//div[@id=\"result-section\"]//ul[@class='bus-items']"));
 
 		String AvailableListofBuses = listofBuses.getText();
 
-		System.out.println("Total Available buses for the selected route is/are: "+AvailableListofBuses);
+		System.out.println("Available buses for the selected route is/are below: "+AvailableListofBuses);
 
+		
 	} 
 
 	@AfterClass

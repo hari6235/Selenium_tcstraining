@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CaseStudy_1.RedBus_Automation">
+      <class name="Grouping.Group">
         <methods>
-          <include name="Testcase3"/>
-          <include name="teardown"/>
-          <include name="Invoke"/>
+          <include name="Scooter1Test"/>
+          <include name="Car2Test"/>
+          <include name="Car1Test"/>
+          <include name="Sedan1Test"/>
+          <include name="Scooter2Test"/>
         </methods>
-      </class> <!-- CaseStudy_1.RedBus_Automation -->
+      </class> <!-- Grouping.Group -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
