@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 ,glue = "StepDefinitions"
 ,monochrome = true
 ,dryRun = false
-,plugin = {"pretty","usage:target\\UsageReport","html:target\\HtmlReport.html","json:target\\JSONReport.json"}
+,plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
 
 

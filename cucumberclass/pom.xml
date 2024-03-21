@@ -23,6 +23,7 @@
         <artifactId>junit-jupiter-api</artifactId>
         <version>5.7.0</version>
     </dependency>
+    
 <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 <dependency>
     <groupId>commons-io</groupId>
@@ -40,5 +41,18 @@
 	    <artifactId>cucumber-testng</artifactId>
 	    <version>7.12.0</version>
 	</dependency>
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
+<dependency>
+    <groupId>tech.grasshopper</groupId>
+    <artifactId>extentreports-cucumber7-adapter</artifactId>
+    <version>1.14.0</version>
+</dependency>
+
 		</dependencies>
 		</project>
